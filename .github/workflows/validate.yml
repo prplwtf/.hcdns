@@ -16,13 +16,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
-          allow-unsafe-pr-checkout: true
+
+      - name: Overlay PR data files
+        if: github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          git fetch origin "pull/${PR_NUMBER}/head:pr-head"
+          git checkout pr-head -- ':(top,glob)*.yaml'
+
+      - name: Checkout PR head (same-repo)
+        if: github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          git fetch origin "pull/${PR_NUMBER}/head:pr-head"
+          git checkout pr-head
 
       - name: json-yaml-validate
         id: json-yaml-validate
-        uses: GrantBirki/json-yaml-validate@v5.0.0
+        uses: GrantBirki/json-yaml-validate@v5.0.1
         with:
           comment: "true"
 
@@ -31,9 +44,22 @@ jobs:
     if: github.event_name == 'pull_request_target' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     steps:
       - uses: actions/checkout@v7
-        with:
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
-          allow-unsafe-pr-checkout: true
+
+      - name: Overlay PR data files
+        if: github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          git fetch origin "pull/${PR_NUMBER}/head:pr-head"
+          git checkout pr-head -- ':(top,glob)*.yaml'
+
+      - name: Checkout PR head (same-repo)
+        if: github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          git fetch origin "pull/${PR_NUMBER}/head:pr-head"
+          git checkout pr-head
 
       - uses: actions/setup-python@v7
         with:
