@@ -241,6 +241,9 @@ bin: # by U07FD57JN67 (adi // pizzalover125)
   ttl: 600
   type: CNAME
   value: cname.vercel-dns.com.
+blanche: # evanxdsouza@gmail.com U0AHS9VLG0K
+- type: CNAME
+  value: dashboard.automiq.me.
 blit: # U07JEDAMFV3
   ttl: 600
   type: A
@@ -492,6 +495,9 @@ e: # drawing app - by https://github.com/sporeball
   ttl: 600
   type: CNAME
   value: sporeball.github.io.
+easythere: # creatorpoints.dev@gmail.com U0BQFSHAV9T
+- type: CNAME
+  value: cname.vercel-dns.com.
 egg-labs: # just a WIP catalogue of tools for HCTG, U092UGQGHHP
   ttl: 600
   type: CNAME
@@ -605,6 +611,9 @@ galaxybrain: # aaranysaini4@gmail.com U0B78MFGH9P
 - type: A
   value: 216.198.79.1
 game-a-tale: # creatorpoints.dev@gmail.com U0BQFSHAV9T
+- type: CNAME
+  value: cname.vercel-dns.com.
+gametale: # creatorpoints.dev@gmail.com U0BQFSHAV9T
 - type: CNAME
   value: cname.vercel-dns.com.
 get: # sabhya.aggarwal@icloud.com U0A83DB0TRN
@@ -888,6 +897,10 @@ lyon:
   ttl: 600
   type: CNAME
   value: lyon-website.pages.dev.
+m: # dani@hackclub.com - for use on hq's local network
+  ttl: 600
+  type: A
+  value: 10.40.77.236
 mail: # a page to share your email with orpheus
   ttl: 600
   type: CNAME
@@ -907,6 +920,15 @@ ghost.deployment.mangrove: # evanxdsouza@gmail.com U0AHS9VLG0K
 reverse.deployment.mangrove: # evanxdsouza@gmail.com U0AHS9VLG0K
 - type: CNAME
   value: evanxdsouza.hackclub.app.
+docs.mangrove: # evanxdsouza@gmail.com U0AHS9VLG0K
+- type: CNAME
+  value: cname.mintlify.builders.
+_acme-challenge.docs.mangrove: # evanxdsouza@gmail.com U0AHS9VLG0K
+- type: TXT
+  value: H1O82q1Ys9yfUDFCufILg2RUVoD1vlnMWchlPteulFU
+_cf-custom-hostname.docs.mangrove: # evanxdsouza@gmail.com U0AHS9VLG0K
+- type: TXT
+  value: f44a9f02-4745-4284-b434-2551aa70e545
 forms.mangrove: # evanxdsouza@gmail.com U0AHS9VLG0K
 - type: CNAME
   value: evanxdsouza.hackclub.app.
