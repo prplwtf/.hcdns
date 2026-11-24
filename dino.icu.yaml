@@ -61,6 +61,18 @@
 aan: # yassinbs@yahoo.com
 - type: CNAME
   value: cname.vercel-dns.com.
+abc: # U0BMJP5HD7T
+- type: CNAME
+  value: hc-dns.justawebsite.cc.
+_acme-challenge.abc:
+# U0BMJP5HD7T
+- type: TXT
+  values:
+  - XuexMwdmFssnDE7xoWjq0N95Up5XGNO4seVZ0cLthY4
+  - QrsRxuS1vwF28qfY1BPauvP-yA0SRbTN66IhTVQA3zo
+_cf-custom-hostname.abc: # U0BMJP5HD7T
+- type: TXT
+  value: 7b99d29d-0a48-4ddb-a6fe-04c1cd60cbd6
 ai: # Suprised no one took this yet!
 - ttl: 600   # + AI
   type: CNAME   # https://github.com/elijah629/web2050,
@@ -346,6 +358,9 @@ chess: # by https://github.com/leecheeyong/chinese-chess
   ttl: 600
   type: CNAME
   value: cname.vercel-dns.com.
+chronicles: # creatorpoints.dev@gmail.com U0BQFSHAV9T
+- type: CNAME
+  value: cname.vercel-dns.com.
 cipher: # rupnil.mondal2+hackclub@gmail.com; Rupnil Codes, slack: U0A4UTULSLE
 - ttl: 600
   type: A
@@ -396,6 +411,9 @@ corechat: # aradforsure@gmaul.com U0AJN9LJDGS
   ttl: 600
   type: CNAME
   value: aradjpy.github.io.
+cpoints: # creatorpoints.dev@gmail.com U0BQFSHAV9T
+- type: CNAME
+  value: cname.vercel-dns.com.
 cq: # @ruben (U0AHNB20WDD) on slack, ruben@scstudios.tech https://github.com/code2344/contact-website
   ttl: 600
   type: A
@@ -531,6 +549,9 @@ erdtree: # erdtree.dino.icu - contact @justhypex on discord for issues/enquiries
   values:
   - exchange: mail.vortex.skyfall.dev.
     preference: 500
+time-api.ereninki: # eren61794@gmail.com U0ASCU7PCAW
+- type: CNAME
+  value: ereninki.hackclub.app.
 evan:
   ttl: 600
   type: A
@@ -562,6 +583,10 @@ felix: # jacob.navaratne@outlook.com | Jacob Navaratne | @Jacob on Slack!
   ttl: 600
   type: CNAME
   value: smartsparkcoding.github.io.
+fern: # U0BJ9RRNS3V | or ferntasticvr on github or ferntastical on codeberg
+- ttl: 600
+  type: CNAME
+  value: fern.hackclub.app.
 fhs: # U07V1ND4H0Q
 - type: A
   value: 216.198.79.1
@@ -610,12 +635,6 @@ fullhouse: #niko@nikoo.dev U08SF8MVC82
 galaxybrain: # aaranysaini4@gmail.com U0B78MFGH9P
 - type: A
   value: 216.198.79.1
-game-a-tale: # creatorpoints.dev@gmail.com U0BQFSHAV9T
-- type: CNAME
-  value: cname.vercel-dns.com.
-gametale: # creatorpoints.dev@gmail.com U0BQFSHAV9T
-- type: CNAME
-  value: cname.vercel-dns.com.
 get: # sabhya.aggarwal@icloud.com U0A83DB0TRN
 - ttl: 600
   type: A
@@ -728,6 +747,9 @@ icons: # yoda - https://github.com/yodalightsabr/icons-dino-icu - a CDN for @hac
   ttl: 600
   type: A
   value: 76.76.21.21
+_acme-challenge.abc.dino.icu: # U0BMJP5HD7T
+- type: TXT
+  value: VYNutGVxxyp9iRtT2uAGPb52hWTKaP20PPsqLW5xsHM
 idli: # jaykrishnatj@proton.me | Github: https://github.com/idli69
 - type: CNAME
   value: ubu.hackclub.app.
@@ -759,6 +781,9 @@ innohacks: #efe
   ttl: 600
   type: CNAME
   value: cname.vercel-dns.com.
+innovatediab: # adityajain1225@gmail.com  /U0BMAPM5AQL
+- type: CNAME
+  value: innovate-diab.github.io.
 itsjxnah: # itsjxnah.public@proton.me
 - type: CNAME
   value: portfolio-itsjxnah.vercel.app.
@@ -857,6 +882,9 @@ leo:
   ttl: 600
   type: CNAME
   value: wilkin.xyz.
+leosdns: # leolevd@leolevd.dev
+- type: A
+  value: 1.1.1.1
 levelzero: # @arjav0703 (gh) - ysws website
   ttl: 600
   type: A
@@ -880,7 +908,17 @@ lkmw:
 loadout: # jeremyyeboahdarko@gmail.com
 - ttl: 600
   type: A
-  value: 216.198.79.1
+  value: 65.108.74.29
+- ttl: 600
+  type: TXT
+  value: "domain-verification=jeremy-d"   # Nest dashboard domain verification
+review.loadout: # jeremyyeboahdarko@gmail.com | LOADOUT reviewer desk
+- ttl: 600
+  type: A
+  value: 65.108.74.29
+- ttl: 600
+  type: TXT
+  value: "domain-verification=jeremy-d"   # Nest dashboard domain verification
 loners: # support+loners@swehosting.pl
 - ttl: 600
   type: CNAME
@@ -983,6 +1021,9 @@ monty: # contact via adelinmihai071@gmail.com
   ttl: 600
   type: CNAME
   value: cname.vercel-dns.com.
+mossy: # U0A3B4R6T9B
+- type: CNAME
+  value: website-iota-vert-28.vercel.app.
 motivation:
   ttl: 600
   type: CNAME
@@ -1119,6 +1160,9 @@ periodic:
   ttl: 600
   type: CNAME
   value: leecheeyong.github.io.
+photon: # creatorpoints.dev@gmail.com U0BQFSHAV9T
+- type: CNAME
+  value: cname.vercel-dns.com.
 piyush:
   ttl: 600
   type: CNAME
@@ -1130,6 +1174,9 @@ playground: #https://github.com/thagreatjoel/Playground
   ttl: 600
   type: CNAME
   value: hardwareplayground.netlify.app.
+podium: # jolly@hackclub.com U08CJCZ2Z9S
+- type: CNAME
+  value: a.ingress.tier2.infra.hackclub.com.
 premier: # rushil@hackclub.com U020X4GCWSF
   ttl: 600
   type: CNAME
@@ -1277,6 +1324,9 @@ schemabuilder: # hackclub-dns@fabian.ternismail.de U0B8JTZDTKQ
 - ttl: 18000
   type: A
   value: 77.90.15.2   # vweb01.eu
+scramjet: # echo@hackclub.com
+- type: CNAME
+  value: a.ingress.tier2.infra.hackclub.com.
 sdheeraj: # https://github.com/17sdheeraj/17sdheeraj.github.io
   ttl: 600
   type: CNAME
@@ -1315,6 +1365,9 @@ short: # short.dino.icu; by kunal botla (.com)
   ttl: 600
   type: CNAME
   value: cname.vercel-dns.com.
+shortcut: # harora@elipseday.xyz
+- type: A
+  value: 216.198.79.1
 sk: # sk.dino.icu unofficial hackclub sharkey instance
   ttl: 600
   type: CNAME
@@ -1429,6 +1482,9 @@ terror:
   ttl: 600
   type: CNAME
   value: 4H4CayJ.github.io.
+thesis: # cloudglides@proton.me U0A2EKA9FAL
+- type: CNAME
+  value: a.ingress.tier2.infra.hackclub.com.
 thorn: # thorn.dev49@gmail.com
 - type: AAAA
   value: 2a01:4f9:3080:3192::1966
@@ -1443,6 +1499,9 @@ timetable: # devansh.awat@gmail.com https://github.com/Devansh-awat
 tn-search: # tyleruploads@yahoo.com
 - type: CNAME
   value: tn-search.pages.dev.
+tnchess: # tyleruploads@yahoo.com
+- type: CNAME
+  value: tnchess.pages.dev.
 toonnongaeoy:
 - ttl: 600
   type: CNAME
@@ -1599,6 +1658,15 @@ www: # mahad@hackclub.com (redirect to bare domain)
   ttl: 600
   type: CNAME
   value: xdonryt4em6uudcgsggr2va2.b.selfhosted.hackclub.com.
+xdvd: # U0A255XDA9H
+- type: CNAME
+  value: codeberg.page.
+_git-pages-forge-allowlist.xdvd: # U0A255XDA9H
+- type: TXT
+  value: "https://codeberg.org/xdvd/pages.git"
+_git-pages-repository.xdvd: # U0A255XDA9H
+- type: TXT
+  value: "https://codeberg.org/xdvd/pages.git"
 yahri-staging: # anson@hackclub.com
 - ttl: 600
   type: A
